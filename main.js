@@ -1,22 +1,10 @@
 import Expo from 'expo';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-const bgColor = '#fff';
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: bgColor,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import TabRouter from './src/router/TabRouter';
 
 const App = () =>
 (
-  <View style={styles.container}>
-    <Text>Open up main.js to start working on your app!</Text>
-  </View>
+  <TabRouter />
 );
 
 Expo.registerRootComponent(App);
