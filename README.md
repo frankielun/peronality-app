@@ -1,1 +1,1 @@
-peronality-app
+personality-app
