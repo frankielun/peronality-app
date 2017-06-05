@@ -2,6 +2,7 @@ import { TabNavigator } from 'react-navigation';
 import CatalogStackScreen from './CatalogStackRouter';
 import ResultStackScreen from './ResultStackRouter';
 import SettingStackScreen from './SettingStackRouter';
+import { Platform } from 'react-native';
 
 const TabRouter = TabNavigator({
   Catalog: {
@@ -16,6 +17,7 @@ const TabRouter = TabNavigator({
 }, {
   tabBarOptions: {
     activeTintColor: '#000000',
+    style: { marginTop: (Platform.OS === 'ios') ? 0 : 24 },
   },
 });
 
