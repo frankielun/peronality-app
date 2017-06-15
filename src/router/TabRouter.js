@@ -1,8 +1,8 @@
 import { TabNavigator } from 'react-navigation';
+import { Platform } from 'react-native';
 import CatalogStackScreen from './CatalogStackRouter';
 import ResultStackScreen from './ResultStackRouter';
 import SettingStackScreen from './SettingStackRouter';
-import { Platform } from 'react-native';
 
 const TabRouter = TabNavigator({
   Catalog: {
@@ -20,5 +20,6 @@ const TabRouter = TabNavigator({
     style: { marginTop: (Platform.OS === 'ios') ? 0 : 24 },
   },
 });
+
 
 export default TabRouter;

@@ -2,16 +2,16 @@ import Expo from 'expo';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import TabRouter from './src/router/TabRouter';
+import AppNavigation from './AppNavigation';
 import rootReducer from './src/reducers/RootReducer';
 
 const store = createStore(rootReducer);
 
-const App = () =>
+const Main = () =>
 (
   <Provider store={store}>
-    <TabRouter />
+    <AppNavigation />
   </Provider>
 );
 
-Expo.registerRootComponent(App);
+Expo.registerRootComponent(Main);
